@@ -20,11 +20,12 @@ class MainClass {
 		*/
 
 		//Faça um programa que leia 5 números e informe o maior número.
-		double numero, maiornumero=-1;
+		double numero, maiornumero=0;
 		for (int i=0; i<5; ++i) {
 			Console.Write ("Informe um número: ");
 			numero = double.Parse(Console.ReadLine());
-
+			if (i==0)
+				maiornumero = numero;
 			if (numero > maiornumero)
 				maiornumero = numero;
 		}
