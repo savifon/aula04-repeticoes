@@ -6,6 +6,17 @@ Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso
 
 class MainClass {
   public static void Main (string[] args) {
-    Console.WriteLine ("Hello World");
+		bool valido = false;
+		double nota;
+
+		while (valido==false){
+			Console.Write ("Informe uma nota entre 0 e 10: ");
+			nota = double.Parse(Console.ReadLine());
+
+			if (nota >= 0 && nota <= 10)
+				valido = true;
+			else
+				Console.WriteLine("* VALOR INVÁLIDO *");
+		}
   }
 }
