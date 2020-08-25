@@ -9,7 +9,7 @@ class MainClass {
 		bool valido = false;
 		double nota;
 
-		while (valido==false){
+		while (!valido){
 			Console.Write ("Informe uma nota entre 0 e 10: ");
 			nota = double.Parse(Console.ReadLine());
 
